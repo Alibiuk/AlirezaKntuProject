@@ -1,0 +1,259 @@
+/* تنظیمات پایه برای بدنه */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* استایل برای بخش پروفایل در بالای صفحه */
+.profile-header {
+    width: 900px;
+    height: 150px;
+    text-align: center;
+    margin-left: 309px;
+    /*margin-bottom: 40px;*/
+    background-color:#333;
+}
+
+.profile-picture img{
+    text-align: left;
+    width: 130px;
+    height: 120px;
+    background-color: #444;
+    border-radius: 50%;
+    margin-right:65%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+
+/*.profile-picture img{
+    width: 100px;
+    height: 100px;
+    border-radius:50% ;
+}*/
+
+.profile-header h1 {
+    font-size: 40px;
+    margin-top: -12%;
+    color: #ddd;
+    padding-left: 200px;
+}
+
+/* کانتینر کلی رزومه */
+.resume-container {
+    text-align: left;
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* استایل برای ستون سمت چپ */
+
+
+.sidebar {
+    background-color: #f1ebe5;
+    width: 30%;
+    padding: 20px;
+    text-align: left;
+}
+
+.education p{
+    margin-bottom: -20px;
+}
+
+.dot {
+    height: 11px;
+    width: 11px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline;
+    float: left;
+    margin: 5px;
+
+  }
+
+  .dot p{
+    padding-left: 10px;
+  }
+
+
+  .p1_education{
+    padding-left: 20px;
+    padding-left: 30px;
+   
+  }
+
+.line {
+    border-left: 2px solid black;
+    margin-left: 9px;
+    padding-top: 10px;
+    padding-left: 15px;
+  }
+ .line p{
+    /* margin-top: 10px;
+    margin-right: 10px; */
+    margin-bottom: -10px;
+    /* padding-right: 0px; */
+    padding-left: 5px;
+ }
+/*.education ul li{
+    list-style-type: disc;
+    font-size: 20px;
+    margin-left: 30px;
+}*/
+
+
+.sidebar h2 {
+    font-size: 18px;
+    /*border-bottom: 2px solid #ddd;*/
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+ .contact{
+    font-size: 15px;
+    margin-bottom: 40px;
+
+ }
+ .contact p{
+    margin-left: 10px;
+ }
+
+ .contact p i{
+     margin-right: 10px;
+ }
+
+
+ .contact_link:hover{
+    font-size: 17px;
+    
+    text-decoration: none;
+ }
+
+ .contact_Phone{
+    text-decoration: none;
+    padding-left: 2px;
+ }
+
+ .contact_Phone:hover{
+    font-size: larger;
+    text-decoration: underline;
+ }
+
+
+ .contact_address{
+    text-decoration: none;
+    padding-left: 10px;
+
+ }
+
+ .contact_address:hover{
+    font-size: larger;
+    text-decoration: underline;
+ }
+
+ .education{
+    font-size: 15px;
+    margin-bottom: 40px;
+ }
+
+ .skills{
+    font-size: 15px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+ }
+
+ .skills ul li{
+
+    padding-bottom: 10px;
+ }
+
+ /* .contact,.education,.skills{
+    padding-left: 10px;
+ } */
+
+
+/* استایل برای محتوای اصلی */
+.main-content {
+    padding: 20px;
+    width: 70%;
+}
+
+.main-content h2 {
+    font-size: 25px;
+    border-bottom: 2px solid #333;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.main-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.summary p{
+    font-size: 17px;
+
+}
+.summary{
+    margin-bottom: 50px;
+}
+.job p{
+    font-size: 12px;
+    color: darkgrey;
+    margin-top: -12px;
+    margin-left: 2px;
+}
+.job h3{
+    font-size: 15px;
+    
+}
+
+.job ul {
+    padding-left: 30px;
+}
+
+/* ریسپانسیو برای تبلت و موبایل */
+@media (max-width: 768px) {
+    .profile-header{
+        flex-direction: column;
+        width: 100%;
+        /* text-align: center; */
+        /* text-align: left; */
+        margin: 0;
+    }
+    .resume-container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .sidebar, .main-content {
+        width: 100%;
+    }
+
+    .sidebar {
+        padding: 15px;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+}
+
+
+
